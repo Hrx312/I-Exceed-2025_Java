@@ -14,7 +14,7 @@ class student
 	  return roll;
 	}
  
-      public String getname()  //write only
+      public String getname()  //read only
 	{
 	  return name;
 	}
@@ -23,7 +23,7 @@ class student
 	  return dept;
 	}
  
-     public void setRoll(int roll)
+     public void setRoll(int roll) //write only
 	{
 	  this.roll=roll;
 	}
