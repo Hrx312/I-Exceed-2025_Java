@@ -41,7 +41,7 @@ class demoencapsulation
 {
     public static void main(String asdd[])
 	{
-	   student s1=new student("Ram",1,"CSE");
+	   student s1=new student("Harsh",1,"CSE");
 	   System.out.println(s1.getname());
 	   System.out.println(s1.getroll());
 	   System.out.println(s1.getdept());
