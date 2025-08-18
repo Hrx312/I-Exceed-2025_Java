@@ -8,11 +8,11 @@ class sample
        sample()
         {
            
-            a.add("python");
-            a.add("java");
-            a.add("js");
-            a.add("scala");
-            a.add("Go");
+            a.add("Audi");
+            a.add("BMW");
+            a.add("Corvette");
+            a.add("Dodge");
+            a.add("E-Tron");
          
  
         //    System.out.println(a.get(0));    
