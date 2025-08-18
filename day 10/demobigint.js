@@ -14,3 +14,9 @@ let balance=1000n;// 10.00
 let deposit=25n;
 balance+=deposit;
 console.log(Number(balance)/100);
+
+let max=Number.MAX_SAFE_INTEGER;
+console.log(max);
+let max_n=9007199254740991n
+let ad=10n;
+console.log(max_n+ad);
