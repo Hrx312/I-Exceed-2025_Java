@@ -16,6 +16,7 @@ console.log(Number.MAX_VALUE);
 console.log(Number.MIN_VALUE);
 console.log(Number.EPSILON);
 console.log(Number.NaN);
+let maxBigInt=BigInt("9007199254740991");
 console.log(maxBigInt+12n);
 console.log(typeof(maxBigInt));
 
