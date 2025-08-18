@@ -16,7 +16,8 @@ console.log(Number.MAX_VALUE);
 console.log(Number.MIN_VALUE);
 console.log(Number.EPSILON);
 console.log(Number.NaN);
-
+console.log(maxBigInt+12n);
+console.log(typeof(maxBigInt));
 
 
 
