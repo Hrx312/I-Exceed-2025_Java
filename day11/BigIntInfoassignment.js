@@ -7,7 +7,7 @@ let sub = big2 - big1;// Subtraction
 let multiply = big1 * big2;// Multiplication
 let division = big2 / big1;// Division
 let remainder = big2 % big1;// Modulas
-let power = big1 ** 2n;// Power 
+let power = big1 ** 2n;// Square of bigint 
 
 console.log("Sum : ", sum);
 console.log("Subtraction : ", sub);
@@ -19,6 +19,15 @@ console.log("Power : ", power);
 // Comparing two bigint values
 console.log(" big1 > big2 ", big1 > big2);
 console.log(" big1 === big2 ", big1 === big2);
+
+//Sorting
+// not using .sort() without a comparator, because it will sort BigInts as strings which gives incorrect results.
+const bigInt = [987654321012345678n,123456789012345678n,555555555555555555n,666666666666666666n,88890988989987987n];
+bigInt.sort((a, b) => (a > b ? 1 : -1));
+console.log("Sorted BigInts:", bigInt);//Ascending order
+bigInts.sort((a, b) => (a < b ? 1 : -1));
+console.log("Sorted BigInts:", bigInts);//descending order
+
 
 //Bigint Use Cases In Finance
 
