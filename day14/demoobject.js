@@ -40,7 +40,7 @@ console.log(savingaccount.getBalance());
 console.log(savingaccount);
 console.log(bankaccount);
  
-let businessbankaccount=Object.create(bankaccount,{accno:{value:"bba01",configurable:true,writable:true,enumerable:true},holder:{value:"harsh",writable:true,configurable:true,enumerable:false},balance:{value:1,writable:true,}});
+let businessbankaccount=Object.create(bankaccount,{accno:{value:"bba01",configurable:false,writable:true,enumerable:true},holder:{value:"harsh",writable:true,configurable:true,enumerable:true},balance:{value:1,writable:true,}});
 businessbankaccount.accno="ba001";
 businessbankaccount.holder="harsh raj";
 console.log(businessbankaccount.accno);
@@ -56,4 +56,10 @@ console.log(businessbankaccount.balance);
 for (let key in businessbankaccount) {
   console.log(key); 
 } 
- 
+delete businessbankaccount.holder;
+delete businessbankaccount.accno;
+for (let key in businessbankaccount)
+    {
+        
+        console.log(key+":"+businessbankaccount[key]);
+    }
