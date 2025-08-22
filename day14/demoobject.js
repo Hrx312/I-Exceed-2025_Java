@@ -16,6 +16,7 @@ const bankaccount={
     }
  
 }
+
  
 let savingaccount=Object.create(bankaccount);
 savingaccount.accno="sb111";
@@ -38,3 +39,19 @@ savingaccount.withdraw(121000);
 console.log(savingaccount.getBalance());
 console.log(savingaccount);
 console.log(bankaccount);
+ 
+let businessbankaccount=Object.create(bankaccount,{accno:{value:"bba01",configurable:true,writable:true,enumerable:true},holder:{value:"harsh",writable:false,configurable:true,enumerable:false},balance:{value:1,writable:true}});
+businessbankaccount.holder="abcd";
+console.log(businessbankaccount.holder);
+console.log(businessbankaccount.balance);
+businessbankaccount.deposit(200000);
+console.log(businessbankaccount.balance);
+businessbankaccount.withdraw(50001);
+console.log(businessbankaccount.balance);
+
+// In enumerable the one which we have given true will come in the loops which means it is iterable and the one which is false is not iterable 
+// by default the value of enumerable is false
+for (let key in businessbankaccount) {
+  console.log(key); 
+} 
+ 
