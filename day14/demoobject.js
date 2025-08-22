@@ -40,8 +40,10 @@ console.log(savingaccount.getBalance());
 console.log(savingaccount);
 console.log(bankaccount);
  
-let businessbankaccount=Object.create(bankaccount,{accno:{value:"bba01",configurable:true,writable:true,enumerable:true},holder:{value:"harsh",writable:false,configurable:true,enumerable:false},balance:{value:1,writable:true}});
-businessbankaccount.holder="abcd";
+let businessbankaccount=Object.create(bankaccount,{accno:{value:"bba01",configurable:true,writable:true,enumerable:true},holder:{value:"harsh",writable:true,configurable:true,enumerable:false},balance:{value:1,writable:true,}});
+businessbankaccount.accno="ba001";
+businessbankaccount.holder="harsh raj";
+console.log(businessbankaccount.accno);
 console.log(businessbankaccount.holder);
 console.log(businessbankaccount.balance);
 businessbankaccount.deposit(200000);
